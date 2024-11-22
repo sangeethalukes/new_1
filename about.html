@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Kenesis</title>
+  <style>
+    /* General Reset */
+    body, h1, h2, h3, p, ul, ol, li, figure {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 5rem 1rem;
+      background-color: white;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (min-width: 1024px) {
+      .content-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Heading */
+    .heading {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #1a202c;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Text */
+    .text {
+      color: #4a5568;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Profile Section */
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .profile-img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile-name {
+      font-weight: 600;
+      color: #1a202c;
+    }
+
+    .profile-role {
+      color: #FF8C42;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .stat-card {
+      background-color: #f7fafc;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      border: 1px solid #edf2f7;
+      text-align: center;
+      transition: box-shadow 0.3s;
+    }
+
+    .stat-card:hover {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .stat-icon {
+      width: 3rem;
+      height: 3rem;
+      background-color: rgba(255, 140, 66, 0.1);
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+
+    .stat-icon img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+    .stat-value {
+      font-size: 1.875rem;
+      font-weight: bold;
+      color: #1a202c;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      color: #4a5568;
+    }
+  </style>
+</head>
+<body>
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="content-grid">
+        <div>
+          <h2 class="heading">
+            Your Trusted Partner in Healthcare Staffing
+          </h2>
+          <p class="text">
+            At Kenesis, we understand that quality healthcare starts with exceptional professionals. Since our founding, we've been connecting leading healthcare facilities with skilled medical professionals, ensuring seamless staffing solutions that prioritize patient care.
+          </p>
+          <p class="text">
+            Our rigorous vetting process and commitment to excellence have made us a trusted partner for healthcare facilities across the nation. We take pride in maintaining the highest standards of professional integrity and patient care.
+          </p>
+          <div class="profile">
+            <img 
+              src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=200&h=200" 
+              alt="Medical Team" 
+              class="profile-img"
+            />
+            <div>
+              <p class="profile-name">Dr. Sarah Mitchell</p>
+              <p class="profile-role">Chief Medical Officer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <img src="assets/user.png" alt="Users Icon" />
+            </div>
+            <div class="stat-value">500+</div>
+            <div class="stat-label">Healthcare Professionals</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <img src="assets/building-2.png" alt="Building Icon" />
+            </div>
+            <div class="stat-value">100+</div>
+            <div class="stat-label">Partner Facilities</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <img src="assets/star-2.png" alt="Star Icon" />
+            </div>
+            <div class="stat-value">98%</div>
+            <div class="stat-label">Satisfaction Rate</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <img src="assets/security.png" alt="Shield Icon" />
+            </div>
+            <div class="stat-value">15+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

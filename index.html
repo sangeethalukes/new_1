@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenesis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> <body>
+    <nav class="navbar fixed w-full bg-white shadow-sm z-50">
+      <div class="container">
+        <div class="navbar-wrapper">
+          <div class="logo">
+            <img src="assets/whiteb.png" alt="Logo" class="logo-image">
+          </div>
+  
+          <div class="nav-links desktop-only">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="btn">Contact Us</a>
+          </div>
+  
+          <button class="menu-button mobile-only" onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+      <div class="mobile-menu hidden" id="mobile-menu">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#contact" class="mobile-nav-link">Contact Us</a>
+      </div>
+    </nav>
+  
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      }
+    </script>
+    <!-- Navigation Bar 
+    <nav>
+        <div class="logo">
+            <img src="assets/whiteb.png" alt="Care Home Agency Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>-->
+    <div class="bgcolor" id="backgroundDiv">
+        <!-- Hero Section -->
+
+    </div>
+    <section id="about" class="about-section">
+        <div class="container">
+          <div class="content-grid">
+            <div>
+              <h2 class="heading">
+                Your Trusted Partner in Healthcare Staffing
+              </h2>
+              <p class="text">
+                At Kenesis, we understand that quality healthcare starts with exceptional professionals. Since our founding, we've been connecting leading healthcare facilities with skilled medical professionals, ensuring seamless staffing solutions that prioritize patient care.
+              </p>
+              <p class="text">
+                Our rigorous vetting process and commitment to excellence have made us a trusted partner for healthcare facilities across the nation. We take pride in maintaining the highest standards of professional integrity and patient care.
+              </p>
+              <div class="profile">
+                <img 
+                  src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=200&h=200" 
+                  alt="Medical Team" 
+                  class="profile-img"
+                />
+                <div>
+                  <p class="profile-name">Dr. Sarah Mitchell</p>
+                  <p class="profile-role">Chief Medical Officer</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-icon">
+                  <img src="assets/user.png" alt="Users Icon" />
+                </div>
+                <div class="stat-value">500+</div>
+                <div class="stat-label">Healthcare Professionals</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">
+                  <img src="assets/building-2.png" alt="Building Icon" />
+                </div>
+                <div class="stat-value">100+</div>
+                <div class="stat-label">Partner Facilities</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">
+                  <img src="assets/star-2.png" alt="Star Icon" />
+                </div>
+                <div class="stat-value">98%</div>
+                <div class="stat-label">Satisfaction Rate</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">
+                  <img src="assets/security.png" alt="Shield Icon" />
+                </div>
+                <div class="stat-value">15+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Introduction Section 
+    <section id="introduction">
+        <h2>About Our Agency</h2>
+        <div class="content-wrapper">
+            <div class="text-content">
+                <p>At Kenesis, we are committed to providing exceptional support to care homes by delivering reliable, certified care professionals whenever you need them. With our 24/7 service, we ensure that your staffing needs are met seamlessly, day or night. Whether it's licensed nurses, skilled carers, or qualified cleaning staff, our team is always ready to step in and provide the care and support your residents deserve.</p>
+                <button>See Recruitment Details</button>
+            </div>
+            <div class="image-content">
+                <img src="assets/241.png" alt="Care Home Agency Image">
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Key Services Summary (3 ns) -->
+   <!-- Key Services Summary (3 Columns) 
+   <h1 class="ser">Services</h1>
+<section id="services">
+
+    <a href="nurses.html" class="service-link">
+        <div class="service-item">
+            <h3>Certified Nurses</h3>
+            <p>Experienced, licensed nurses for medical needs.</p>
+            <img src="assets/nurse.png" alt="Nurse Icon" class="service-icon">
+        </div>
+    </a>
+    
+    <a href="cleaning.html" class="service-link">
+        <div class="service-item">
+            <h3>Cleaning Staff</h3>
+            <p>Qualified cleaning staff, based upon your needs</p>
+            <img src="assets/clean.png" alt="Cleaning Icon" class="service-icon">
+        </div>
+    </a>
+    
+    <a href="carers.html" class="service-link">
+        <div class="service-item">
+            <h3>Qualified Carers</h3>
+            <p>Skilled carers for personal care and daily tasks.</p>
+            <img src="assets/carer.png" alt="Carer Icon" class="service-icon">
+        </div>
+    </a>
+    
+    <a href="staffing.html" class="service-link">
+        <div class="service-item">
+            <h3>Flexible Staffing Solutions</h3>
+            <p>Customized staffing for your needs.</p>
+            <img src="assets/staff.png" alt="Staffing Icon" class="service-icon">
+        </div>
+    </a>
+
+</section>-->
+<section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="assets/stethoscope.png" alt="Stethoscope Icon" />
+          </div>
+          <h3 class="service-title">Certified Nurses</h3>
+          <p class="service-description">
+            Experienced, licensed nurses for medical needs.
+          </p>
+          <div class="service-image">
+            <img
+              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80"
+              alt="Certified Nurses"
+            />
+          </div>
+        </div>
+  
+        
+  
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="assets/heart.png" alt="Heart Icon" />
+          </div>
+          <h3 class="service-title">Qualified Carers</h3>
+          <p class="service-description">
+            Skilled carers for personal care and daily tasks.
+          </p>
+          <div class="service-image">
+            <img
+              src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80"
+              alt="Qualified Carers"
+            />
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-card">
+            <div class="service-icon">
+              <img src="assets/paint-brush.png" alt="Brush Icon" />
+            </div>
+            <h3 class="service-title">Cleaning Staff</h3>
+            <p class="service-description">
+              Qualified cleaning staff, based upon your needs.
+            </p>
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80"
+                alt="Cleaning Staff"
+              />
+            </div>
+          </div>
+  
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="users-icon.svg" alt="Users Icon" />
+          </div>
+          <h3 class="service-title">Flexible Staffing Solutions</h3>
+          <p class="service-description">
+            Customized staffing for your needs.
+          </p>
+          <div class="service-image">
+            <img
+              src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=80"
+              alt="Flexible Staffing Solutions"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2 class="contact-title">Get in Touch</h2>
+          <p class="contact-description">
+            Ready to solve your staffing needs? Contact us today and let's discuss how we can help.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <img src="phone-icon.svg" alt="Phone Icon" class="contact-icon" />
+              <div>
+                <h3 class="contact-label">Phone</h3>
+                <p class="contact-text">+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="mail-icon.svg" alt="Mail Icon" class="contact-icon" />
+              <div>
+                <h3 class="contact-label">Email</h3>
+                <p class="contact-text">contact@kenesis.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="map-icon.svg" alt="Map Pin Icon" class="contact-icon" />
+              <div>
+                <h3 class="contact-label">Address</h3>
+                <p class="contact-text">123 Healthcare Ave, Medical District</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Contact Form -->
+        <form action="http://localhost:5001/send-email" method="POST" class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label class="forml" for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-input"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="form-group">
+            <label class="forml" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-input"
+              placeholder="your@email.com"
+            />
+          </div>
+          <div class="form-group">
+            <label class="forml" for="message">Message</label>
+            <textarea
+              id="message"
+              rows="4"
+              class="form-input"
+              placeholder="How can we help?"
+            ></textarea>
+          </div>
+          <button type="submit" class="form-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script>document.getElementById("contact-form").addEventListener("submit", async function (event) {
+    event.preventDefault();
+  
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+  
+    if (!name || !email || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+  
+    try {
+      const response = await fetch("http://localhost:5000/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+  
+      const result = await response.json();
+      if (response.ok) {
+        alert(result.message);
+        document.getElementById("contact-form").reset();
+      } else {
+        alert("Failed to send email. Please try again.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("An error occurred. Please try again later.");
+    }
+  });</script>
+    <!-- Call to Action Buttons 
+    <section id="cta-buttons">
+        <a href="contact.html" class="button">Request Staff</a>
+        <a href="about.html" class="button">Learn More About Us</a>
+        <a href="contact.html" class="button">Contact Us</a>
+    </section>-->
+</section>
+<div> <br> </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const serviceItems = document.querySelectorAll(".service-item");
+
+    const scrollAnimation = () => {
+        serviceItems.forEach((item) => {
+            const rect = item.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                item.classList.add("scroll-active");
+            }
+        });
+    };
+
+    window.addEventListener("scroll", scrollAnimation);
+
+    // Initial check for elements already in view
+    scrollAnimation();
+});
+
+</script>
+</body>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Logo and Contact Info Section -->
+            <div class="footer-section logoj">
+                <a href="https://jaesit.com">
+                    <img src="assets/logo1.svg" alt="JAES Solutions Logo"/>
+                </a>
+                <p>Designed by <a href="https://jaesit.com">JAES Solutions</a>, Harlow, UK</p>
+                <p>Email: <a href="mailto:info@jaesit.com">info@jaesit.com</a></p>
+                <p>Phone: <a href="tel:+441279897648">+44 01279 897648</a></p>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; 2024 Kenesis. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</html>
